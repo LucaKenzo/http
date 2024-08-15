@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace http.Models
 {
-    internal class Post
+    public class Post
     {
         public int UserId { get; set; }
         public int Id { get; set; }
