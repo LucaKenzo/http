@@ -6,10 +6,15 @@
     xmlns:local="clr-namespace:http.Views.NewPage1"
     Shell.FlyoutBehavior="Disabled"
     Title="http">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:PostView}"
-        Route="MainPage" />
-
+    <TabBar>
+        <ShellContent
+            Title="Listar postagem"
+            ContentTemplate="{DataTemplate local:PostView}"
+            Route="PostView" />
+        <ShellContent
+            Title="Criar postagem"
+            ContentTemplate="{DataTemplate local:CreatePostView}"
+            Route="CreatePostView" />
+    </TabBar>
+    
 </Shell>
